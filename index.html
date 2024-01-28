@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Temple Inn Final Project">
+<meta name="author" content="Rony Calderon">
+
+
+<title>Temple Inn</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+
+     
+</head>
+<body>
+    
+<!-- HEADER HERE -->
+	<header >
+        <section class="h-box">
+            <img loading="lazy" src='images/temple-logo-1.webp' alt="Logo-img">
+            <p>Welcome to Temple Inn</p>
+            <a href="http://facebook.com"><img loading="lazy" src='images/facebook-logo.jpg' alt="Logo-img"></a>
+            <a href="http://instagram.com"><img loading="lazy" src='images/instagram-logo.jpg' alt="Logo-img"></a>
+            <a href="http://twitter.com"><img loading="lazy" src='images/twitter-logo.png' alt="Logo-img"></a>
+        </section>
+        <section class="h-grid">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/buenos-aires-320.webp">
+            <source media="(max-width: 540px)" srcset="images/buenos-aires-540.webp">
+            <source media="(max-width: 720px)" srcset="images/buenos-aires-720.webp">
+            <img loading="lazy" src="images/buenos-aires-720.webp" alt="Buenos Aires temple front view">
+          </picture>
+          <h1>&#126;Temple Inn&#126;</h1>
+        </section>
+        
+      
+    </header>
+    
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button id="hamburguerButton"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="temples.html">Temples</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="reception.html">Reception</a></li>
+          <li><a href="missionaries.html">Full-time Missionaries</a></li>
+
+
+                
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="main-grid">
+        <div class="hero-box">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/trujillo-peru-temple-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/trujillo-peru-temple-540px.webp">
+            <img loading="lazy" src="images/trujillo-peru-temple-540px.webp" alt="Trujillo temple front view">
+          </picture>
+          <div class="hero-call">
+            <button>&lAarr;</button>
+            <button onclick="window.location.href='temples.html';" class="reserve">&#9886;Reserve Now&#9887;</button>
+            <button>&rAarr;</button>
+          </div>
+        </div>
+        <form class="book-search" method="get" action="reservation.html">
+          
+          <label class="top" for="start">Check-in<input type="date" id="start" name="trip-start" value="2022-04-06" min="2022-04-01" max="2023-12-31"></label>
+          <label class="top" for="end">Check-out<input type="date" id="end" name="trip-start" value="2022-04-07"
+          min="2022-04-01" max="2023-12-31">
+          </label>
+          
+          <button class="submitBtn" type="submit">Search</button>
+        </form>
+
+        <section class="weather">
+          <h2>Current Weather</h2>
+          
+          <section class="current-weather">
+            <img src="#" id="weathericon" alt="" width="50" height="50">
+            <span id="currentTemp"></span>
+          </section>
+          <section class="c-w-text">
+            <p><span id="humidity"></span></p>
+            <p id="weather-desc"></p>
+            <p class="w-speed"><span id="windSpeed"></span>m/s</p>
+          </section>
+          
+         
+          <section class="week-label">
+            <section class="week-setup">
+              <img src="#" id="day-1" alt="#">
+              <p><span id="day-1-temp"></span>
+                <br><span id="day-1-name"></span>
+              </p>
+              
+            </section>
+            <section class="week-setup">
+              <img src="#" id="day-2" alt="#">
+              <p><span id="day-2-temp"></span><br>
+              <span id="day-2-name"></span></p>
+            </section>
+            <section class="week-setup">
+              <img src="#" id="day-3" alt="#">
+              <p><span id="day-3-temp"></span><br>
+              <span id="day-3-name"></span></p>
+            </section>
+          </section>
+          
+        </section>
+
+        <section class="event">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/rio_de_janeiro_brazil_temple-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/rio_de_janeiro_brazil_temple-540px.webp">
+            <img loading="lazy" src="images/rio_de_janeiro_brazil_temple.webp" alt="Cochabamba temple front view">
+          </picture>
+          <p>Come and join<br>
+          Rio de Janeiro Temple<br>
+          Open House<br>
+        Saturday, 26 March 2022 - Saturday,30 April 2022<br>
+        Avenida Das Américas, Nº 9005<br>
+CEP 22793-083 Barra Da Tijuca - Rio De Janeiro - RJ
+      </p>
+        </section>
+        
+        <section class="temples">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/mexico-city-temple-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/mexico-city-temple-540px.webp">
+            <img loading="lazy" src="images/mexico-city-temple-540px.webp" alt="Cochabamba temple front view">
+          </picture>
+          <div><button onclick="window.location.href='temples.html';">&#126;Temples&#126;</button></div>
+        </section>
+
+        <section class="services">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/hotel-service-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/hotel-service-540px.webp">
+            <img loading="lazy" src="images/hotel-service-540px.webp" alt="women walking in a hall room">
+          </picture>
+          <div><button onclick="window.location.href='services.html';">&#126;Services&#126;</button></div>
+        </section>
+
+        <section class="receptions">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/reception-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/reception-540px.webp">
+            <img loading="lazy" src="images/reception-540px.webp" alt="a reception hall ready to a wedding">
+          </picture>
+          <div><button onclick="window.location.href='reception.html';">&#126;Receptions&#126;</button></div>
+        </section>
+        
+        <section class="missionaries">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/missionaries-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/missionaries-540px.webp">
+            <img loading="lazy" src="images/missionaries-540px.webp" alt="missionaries talking with families">
+          </picture>
+          <div><button onclick="window.location.href='missionaries.html';">&#126;Missionaries&#126;</button></div>
+        </section>
+        <section class="temple-title">
+          <h2>Córdoba Argentina Temple</h2>
+        </section>
+        <section class="temple-pic0">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/cordoba_argentina_temples-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/cordoba_argentina_temples-540px.webp">
+            <img loading="lazy" src="images/cordoba_argentina_temples-320px.webp" alt="missionaries talking with families">
+          </picture>
+        </section>
+        <section class="temple-pic1">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/Cordoba-Argentina-Temple02-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/Cordoba-Argentina-Temple02-540px.webp">
+            <img loading="lazy" src="images/Cordoba-Argentina-Temple02-320px.webp" alt="missionaries talking with families">
+          </picture>
+        </section>
+        <section class="temple-info">
+          <p>4 October 2008 - Announced<br>
+            30 October 2010 - Groundbreaking<br>
+            17 May 2015 - Dedicated<br>
+            The plans for the construction of the temple in Córdoba were announced during the general conference of the church on October 4, 2008 . 1 That same day the construction of the Rome Temple in Italy was announced; the Calgary Canada Temple; the Kansas City Temple ; and the Philadelphia temple , the latter two in the USA. 2 It is the second temple built in Argentina after the Buenos Aires Temple.<br>
+
+Following the announcement, a local church official indicated that the temple would be built in the Villa Belgrano neighborhood, next to the offices of the Córdoba Argentina Mission located in the city of Córdoba. <br>
+
+On October 30, 2010, the groundbreaking ceremony and the ecclesiastical dedication of the land on which the temple would be built were held, which was carried out by Neil L. Andersen who presided over the South America South area. Only local leaders and an additional 500 guests attended the groundbreaking ceremony. 
+          
+          </p>
+        </section>
+        <section class="temple-pic2">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/Cordoba-Argentina-Temple07-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/Cordoba-Argentina-Temple07-540px.webp">
+            <img loading="lazy" src="images/Cordoba-Argentina-Temple07-320px.webp" alt="missionaries talking with families">
+          </picture>
+        </section>
+        <section class="temple-pic3">
+          <picture>
+            <source media="(max-width: 320px)" srcset="images/Cordoba-Argentina-Temple08-320px.webp">
+            <source media="(max-width: 540px)" srcset="images/Cordoba-Argentina-Temple08-540px.webp">
+            <img loading="lazy" src="images/Cordoba-Argentina-Temple08-320px.webp" alt="missionaries talking with families">
+          </picture>
+        </section>
+        
+        
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    <!-- <span id="date"></span> -->
+    <div class="f-grid">
+      <p class="adress">
+        <a href="tel:+12313233435">+12313233435</a> <br><br>
+        4800 Montgomery LN #300,<br><br>
+        Bethesda, MD 20814 <br><br>
+        <a href="mailto:contact@templeinn.com">contact@templeinn.com</a> <br>
+        <br>
+        <a href="https://goo.gl/maps/BC9mtqnWMeRdezBo8">📍 Link to map</a> <br>
+        
+      </p>
+      <img loading="lazy" src='images/temple-logo-1.jpg' alt="Logo-img" >
+    </div>
+    <div id="lastModified"></div> 
+    <div class="f-social">
+      <a href="http://facebook.com"><img loading="lazy" src='images/facebook-logo.jpg' alt="Logo-img"></a>
+            <a href="http://instagram.com"><img loading="lazy" src='images/instagram-logo.jpg' alt="Logo-img"></a>
+            <a href="http://twitter.com"><img loading="lazy" src='images/twitter-logo.png' alt="Logo-img"></a>
+    </div>
+
+</footer>
+
+<script src="js/scripts.js"></script>
+<script src="js/weather-api.js"></script>
+
+</body>
+</html>
